@@ -126,3 +126,8 @@ function draw(){
     console.log('mario was drawn');
     mario.draw();
     mario2.draw();
+    mario2.draw();
+    obstacle.draw();
+    setTimeout(draw, 1000 / FPS);
+}
+draw();

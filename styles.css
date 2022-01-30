@@ -4,5 +4,17 @@ body{
 }
 
 canvas{
-    background: black;
+    position: relative;
+}
+
+.game{
+    position: relative;
+}
+
+.raceway{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 600px;
 }
