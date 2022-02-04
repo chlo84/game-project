@@ -13,6 +13,10 @@ const context = canvas.getContext('2d');
 // context.fillStyle = 'red';
 // context.fillRect(50, 50, 100, 100);
 
+
+    
+
+
 let x = 50;
 let score = 0;
 debug.innerText = `score: ${score}`;
@@ -37,6 +41,7 @@ class DrawObject{
             context.closePath();
         }
         // this.x += 3;
+        
     }
     move(){
         if(this.right){
@@ -128,6 +133,12 @@ function draw(){
     mario2.draw();
     mario2.draw();
     obstacle.draw();
+
+    context.beginPath();
+    context.strokeStyle = 'red';
+    context.arc(50, 50, 50, Math.PI/2, Math.PI + Math.PI/2);
+    context.stroke();
+
     setTimeout(draw, 1000 / FPS);
 }
 draw();
